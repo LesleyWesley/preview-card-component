@@ -1,42 +1,56 @@
+:root {
+  --base-clr: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5rem 0;
+  background-color: var(--base-clr);
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-radius: .5rem;
+  background-color: pink;
 }
 
 .card {
-  padding: 2em;
+  padding: 3rem 3rem 3.5rem 3rem;
+  color: var(--base-clr);
 }
 
-.read-the-docs {
-  color: #888;
+.card--title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.card--description {
+  line-height: 1.75rem;
+  padding-bottom: 1.25rem;
+}
+
+.card--link {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--base-clr);
+  border-radius: 2rem;
+  margin-bottom: 5rem;
 }
