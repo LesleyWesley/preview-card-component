@@ -30,6 +30,7 @@ body {
   width: 90%;
   border-radius: .5rem;
   background-color: pink;
+  overflow: hidden;
 }
 
 .card {
@@ -57,6 +58,18 @@ body {
   border-radius: 2rem;
   margin-bottom: 5rem;
   border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.sedans {
+  color: #e38826;
+}
+
+.SUVs {
+  color: #006970;
+}
+
+.luxury {
+  color: #004241;
 }
 
 .card--link:active,
